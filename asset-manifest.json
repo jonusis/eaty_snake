@@ -1,0 +1,21 @@
+{
+  "main.css": "/eaty_snake/static/css/main.6610ca9a.chunk.css",
+  "main.js": "/eaty_snake/static/js/main.fad8e5f4.chunk.js",
+  "main.js.map": "/eaty_snake/static/js/main.fad8e5f4.chunk.js.map",
+  "runtime~main.js": "/eaty_snake/static/js/runtime~main.419b6e75.js",
+  "runtime~main.js.map": "/eaty_snake/static/js/runtime~main.419b6e75.js.map",
+  "static/js/2.3a98673b.chunk.js": "/eaty_snake/static/js/2.3a98673b.chunk.js",
+  "static/js/2.3a98673b.chunk.js.map": "/eaty_snake/static/js/2.3a98673b.chunk.js.map",
+  "index.html": "/eaty_snake/index.html",
+  "precache-manifest.ef546e33f35a2033dfb4270ce5c67838.js": "/eaty_snake/precache-manifest.ef546e33f35a2033dfb4270ce5c67838.js",
+  "service-worker.js": "/eaty_snake/service-worker.js",
+  "static/css/main.6610ca9a.chunk.css.map": "/eaty_snake/static/css/main.6610ca9a.chunk.css.map",
+  "static/media/button.png": "/eaty_snake/static/media/button.ab56a23e.png",
+  "static/media/button_start.png": "/eaty_snake/static/media/button_start.e5cd2ba2.png",
+  "static/media/description.png": "/eaty_snake/static/media/description.c9826a8c.png",
+  "static/media/losesnake.png": "/eaty_snake/static/media/losesnake.71672783.png",
+  "static/media/move_snake.png": "/eaty_snake/static/media/move_snake.73ea8a9b.png",
+  "static/media/small_snake.png": "/eaty_snake/static/media/small_snake.2e497531.png",
+  "static/media/snake_logo.png": "/eaty_snake/static/media/snake_logo.91261481.png",
+  "static/media/winsnake.png": "/eaty_snake/static/media/winsnake.aad96584.png"
+}
