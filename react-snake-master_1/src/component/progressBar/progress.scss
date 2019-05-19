@@ -1,0 +1,58 @@
+.progress-box {
+  display: inline-block;
+  margin-left: 20px;
+}
+  .progress-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 9px solid rgba(255, 255, 255, 1);
+
+    //margin-right: -27px
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+  }
+
+  .progress-loading {
+    width: 94px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: -27px;
+    background: rgba(255, 255, 255, 1);
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+    .progress-loading-in {
+      height: 30px;
+      width: 0px;
+      boder-width: 1px 0px;
+      border-color: rgba(255, 255, 255, 1);
+      border-style: solid;
+      border-radius: 16px;
+    }
+    .progress-loading-in-twinkling {
+      height: 30px;
+      width: 0px;
+      boder-width: 1px 0px;
+      border-color: rgba(255, 255, 255, 1);
+      border-style: solid;
+      border-radius: 16px;
+      animation:twinkling 0.5s infinite linear;
+      -webkit-animation:twinkling 0.5s infinite linear ; /* Safari and Chrome */
+    }
+    @keyframes twinkling
+    {
+      0%   {opacity: 0.1;}
+      50%  {opacity: 1;}
+      100% {opacity: 0.1;}
+    }
+    @-webkit-keyframes twinkling{
+      0%   {opacity: 0.1;}
+      50%  {opacity: 1;}
+      100% {opacity: 0.1;}
+    }
+

@@ -1,0 +1,35 @@
+{
+  "name": "react-snake",
+  "version": "0.1.0",
+  "private": true,
+  "homepage" : "https://jonusis.github.io/eaty_snake-game/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
+    "immutable": "^4.0.0-rc.12",
+    "react-dev-utils": "^7.0.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
