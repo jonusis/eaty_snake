@@ -1,8 +1,8 @@
 {
   "name": "react-snake",
   "version": "0.1.0",
+  "homepage" : "https://jonusis.github.io/eaty_snake",
   "private": true,
-  "homepage" : "https://jonusis.github.io/eaty_snake-game/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
