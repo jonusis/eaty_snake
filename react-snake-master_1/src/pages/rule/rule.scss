@@ -5,6 +5,7 @@ body{
   display: flex;
   justify-content:center;
   align-items:center;
+  margin: 0;
 }
   .cnt {
     min-width: 808px;
@@ -12,6 +13,7 @@ body{
     height:80%;
     width: 60%;
     background: #475B56;
+    margin: 0 auto;
   }
 
   .descrip {
@@ -29,6 +31,7 @@ body{
     border: 1px solid transparent;
     outline: none;
     background: #475B56;
+    cursor: pointer;
   }
 
   .start {

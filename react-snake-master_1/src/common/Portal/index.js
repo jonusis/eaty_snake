@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import Snake from '../../component/Snake'
 import Index from '../../pages/index/index'
 import Rule from '../../pages/rule/index'

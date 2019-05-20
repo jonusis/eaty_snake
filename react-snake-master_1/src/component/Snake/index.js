@@ -190,18 +190,26 @@ export default class Index extends Component {
         let first = { x: snake[0].x, y: snake[0].y }
         let last = {};
         // move
-        if (dir === direction.up) {
+        if (dir === direction.up ) {
+            if(snake[1] && snake[1].x === (snake[0].x - 1))
+                return;
             first.x -= 1;
         } else if (dir === direction.down) {
+            if(snake[1] && snake[1].x === (snake[0].x + 1))
+                return;
             first.x += 1;
         } else if (dir === direction.left) {
+            if(snake[1] && snake[1].y === (snake[0].y - 1))
+                return;
             first.y -= 1;
         } else if (dir === direction.right) {
+            if(snake[1] && snake[1].y === (snake[0].y + 1))
+                return;
             first.y += 1;
         }
 
         // 撞到自己
-        let _snake = snake.filter(item => item.x === first.x && item.y === first.y)
+        let _snake = snake.filter(item => (item.x === first.x && item.y === first.y))
         if (first.y > size.col - 1 || first.y < 0 || first.x < 0 || first.x > size.row - 1 || _snake.length > 0) {
             this.loseToast();//失败弹窗
             return;
@@ -276,6 +284,7 @@ export default class Index extends Component {
         snake: [{ x: 1, y: 1 }],
         interval: '', //暂停和开始自动移动
         status: 'start', // start or pause
+        isWin: false,
         food: [{ x: 1, y: 4 , color:'red'},{ x: 3, y: 3 , color:'green'},{ x: 10,y: 20 , color:'blue'}]
       })
       this.timer()
@@ -314,6 +323,7 @@ export default class Index extends Component {
             redblock:0,
             blueblock:0,
             greenblock:0,
+            isWin: false,
             isshine:[false,false,false]
         })
         this.timer()
