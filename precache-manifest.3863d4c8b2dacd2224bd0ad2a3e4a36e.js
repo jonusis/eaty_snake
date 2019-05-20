@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/eaty_snake/static/media/button_start.e5cd2ba2.png"
   },
   {
-    "revision": "7fead4c001fdb0765bbd",
-    "url": "/eaty_snake/static/css/main.6610ca9a.chunk.css"
+    "revision": "9d7e3192b817f504d234",
+    "url": "/eaty_snake/static/css/main.d29b7e73.chunk.css"
   },
   {
     "revision": "419b6e754f06dd0b99a5",
@@ -24,31 +24,31 @@ self.__precacheManifest = [
     "url": "/eaty_snake/static/media/snake_logo.91261481.png"
   },
   {
-    "revision": "7fead4c001fdb0765bbd",
-    "url": "/eaty_snake/static/js/main.7fead4c0.chunk.js"
+    "revision": "9d7e3192b817f504d234",
+    "url": "/eaty_snake/static/js/main.9d7e3192.chunk.js"
   },
   {
     "revision": "c9826a8c7966fd9a35bc8c06b6547439",
     "url": "/eaty_snake/static/media/description.c9826a8c.png"
   },
   {
-    "revision": "73ea8a9b344f9f408fe3c7778fbf31c0",
-    "url": "/eaty_snake/static/media/move_snake.73ea8a9b.png"
+    "revision": "5672b4622ab7bc1683dbb2184738eca9",
+    "url": "/eaty_snake/static/media/move_snake.5672b462.png"
   },
   {
     "revision": "2e49753106b0cb3103aa308abc755a48",
     "url": "/eaty_snake/static/media/small_snake.2e497531.png"
   },
   {
-    "revision": "71672783544b2525e30566d0c7688b79",
-    "url": "/eaty_snake/static/media/losesnake.71672783.png"
+    "revision": "c145b716f6f89ab043095fc98033a93c",
+    "url": "/eaty_snake/static/media/losesnake.c145b716.png"
   },
   {
-    "revision": "aad965842dc4cb57ef8334cb65734dfb",
-    "url": "/eaty_snake/static/media/winsnake.aad96584.png"
+    "revision": "8298a645d4391434b6b9499dcbbadc76",
+    "url": "/eaty_snake/static/media/winsnake.8298a645.png"
   },
   {
-    "revision": "970f953fe8c8940de26767eb3490a3aa",
+    "revision": "615a516f24593ed628b2d889e432c7d1",
     "url": "/eaty_snake/index.html"
   }
 ];
