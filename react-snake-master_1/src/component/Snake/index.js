@@ -227,7 +227,7 @@ export default class Index extends Component {
             this.resetZero();//?
             this.setState({
               level: level,
-              readRequest: rgb.r / 20,
+              redRequest: rgb.r / 20,
               greenRequest: rgb.g / 20,
               blueRequest: rgb.b / 20,
             });
