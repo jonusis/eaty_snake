@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/eaty_snake/static/media/button_start.e5cd2ba2.png"
   },
   {
-    "revision": "9d7e3192b817f504d234",
-    "url": "/eaty_snake/static/css/main.d29b7e73.chunk.css"
+    "revision": "b3f71383426dce8b2fc8",
+    "url": "/eaty_snake/static/css/main.f70fe3f1.chunk.css"
   },
   {
     "revision": "419b6e754f06dd0b99a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/eaty_snake/static/media/snake_logo.91261481.png"
   },
   {
-    "revision": "9d7e3192b817f504d234",
-    "url": "/eaty_snake/static/js/main.9d7e3192.chunk.js"
+    "revision": "b3f71383426dce8b2fc8",
+    "url": "/eaty_snake/static/js/main.b3f71383.chunk.js"
   },
   {
     "revision": "c9826a8c7966fd9a35bc8c06b6547439",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/eaty_snake/static/media/winsnake.8298a645.png"
   },
   {
-    "revision": "615a516f24593ed628b2d889e432c7d1",
+    "revision": "32bb4f13bc911983b77f99babd4eab1f",
     "url": "/eaty_snake/index.html"
   }
 ];
