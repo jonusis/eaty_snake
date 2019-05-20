@@ -8,7 +8,7 @@
   background: rgba(182, 232, 207, 1);
 }
   .header-level {
-    width: 109px;
+    width: 125px;
     margin-left: 23px;
     margin-right: 35px;
   }
@@ -42,11 +42,13 @@
       height: 39px;
       font-size: 25px;
       margin-top: 10px;
+      cursor: pointer;
       text-align: center;
       background: rgba(248, 181, 81, 1);
       box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
       border-radius: 20px;
       color: rgba(255, 255, 255, 1);
+      outline:none;
     }
 
   .title-font {

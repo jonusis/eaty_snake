@@ -16,7 +16,7 @@ export default class Index extends Component {
         this.state = {
             list: [
                 {r: 20, g: 80, b: 20},
-                {r: 40, g: 20, b: 100},
+                {r: 120, g: 20, b: 100},
                 {r: 20, g: 120, b: 40},
                 {r: 120, g: 20, b: 60},
                 {r: 120, g: 20, b: 100},
@@ -72,6 +72,9 @@ export default class Index extends Component {
             } else if (keyCode === 40 || keyCode === 83) { // down s
                 this.move(direction.down);
                 this.setState({ dir: direction.down })
+            } else  if(keyCode === 32) { //  space
+                if(this.state.status === 'pause') this.handleStart();
+                else this.buttonPause();
             }
         }.bind(this);
         // 初次渲染的时候开启定时
@@ -89,7 +92,7 @@ export default class Index extends Component {
               targetB={blueRequest * 20}
               level={level}
               status={status}
-              pause={this.pause.bind(this)}
+              buttonPause={this.buttonPause.bind(this)}
               handleRestart={this.handleRestart.bind(this)}
               handleStart={this.handleStart.bind(this)}
               isshine={isshine}
@@ -114,7 +117,8 @@ export default class Index extends Component {
     //移除toast
     toastRemove() {
       this.setState({
-        isToast: false
+        isToast: false,
+        isWin: false
       })
       this.handleRestart();
     }
@@ -262,6 +266,12 @@ export default class Index extends Component {
         this.setState({ status: 'pause' })
     }
 
+    //暂停并且触发toast =》 暂时没有toast了
+    buttonPause() {
+      this.pause();
+      //this.setState({isPause: true});
+    }
+
     // 开始
     handleStart = () => {
         const { status } = this.state;
@@ -284,7 +294,6 @@ export default class Index extends Component {
         snake: [{ x: 1, y: 1 }],
         interval: '', //暂停和开始自动移动
         status: 'start', // start or pause
-        isWin: false,
         food: [{ x: 1, y: 4 , color:'red'},{ x: 3, y: 3 , color:'green'},{ x: 10,y: 20 , color:'blue'}]
       })
       this.timer()
@@ -323,7 +332,6 @@ export default class Index extends Component {
             redblock:0,
             blueblock:0,
             greenblock:0,
-            isWin: false,
             isshine:[false,false,false]
         })
         this.timer()
@@ -389,18 +397,15 @@ export default class Index extends Component {
                 //此处吃多了，应触发闪烁特效提醒玩家！！！
                } 
             }else { len = greenblock / greenRequest * 94; }
-            console.log(len)//
             document.getElementById("green-loading").style.width = [len+"px"].join("");
             this.setState({greenblock});
         }else if(color === 'blue'){
             blueblock += 1;
-            console.log("now:"+blueblock+"target"+blueRequest);//
             if(blueblock > blueRequest) {
               if((blueblock - blueRequest) === 3)  {
                 blueblock = 0;
                 len = 0;
                 isshine[2] = false;
-                console.log("3===now:"+blueblock+"target"+blueRequest);//
                 this.setState({blueblock,checked:true,isshine});
                 this.pause();
                 setTimeout(function () {
@@ -409,14 +414,12 @@ export default class Index extends Component {
                 }.bind(this),5000);
                 //关闭闪烁特效！！！
               }else { 
-                console.log("2===now:"+blueblock+"target"+blueRequest);//
                 len = 94; 
                 isshine[2] = true;
                 this.setState({isshine});
                 //此处吃多了，但是还没死，应触发闪烁特效提醒玩家
               } 
-            }else { len = blueblock / blueRequest * 94;console.log("normal===now:"+ (blueblock / blueRequest)); }
-            console.log("len"+len)//
+            }else { len = blueblock / blueRequest * 94; }
             document.getElementById("blue-loading").style.width = [len+"px"].join("");
             this.setState({blueblock});
         }

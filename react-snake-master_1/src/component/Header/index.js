@@ -13,7 +13,7 @@ class Header extends React.Component{
 
 
   render() {
-    const { isshine,level,status,handleStart,handleRestart,pause,redblock,greenblock,blueblock,targetR,targetG,targetB} = this.props;
+    const { isshine,level,status,handleStart,handleRestart,buttonPause,redblock,greenblock,blueblock,targetR,targetG,targetB} = this.props;
     return(
       <div className="game-header">
         <div className="header-level inline title-font">关卡：{level}</div>
@@ -48,7 +48,9 @@ class Header extends React.Component{
         </div>
         <div className="inline">
           <div className="h-button">
-          <button className="pause header-button" onClick={status === 'pause' ? handleStart : pause}>
+          <button className="pause header-button" 
+            onClick={status === 'pause' ? handleStart : buttonPause}
+          >
             {status === 'pause' ? 'Continue' : 'Pause'}
           </button>
           <button className="restart header-button" onClick={handleRestart}>Restart</button>
