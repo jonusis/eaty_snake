@@ -16,7 +16,7 @@ export default class Index extends Component {
         this.state = {
             list: [
                 {r: 20, g: 80, b: 20},
-                {r: 120, g: 20, b: 100},
+                {r: 40, g: 20, b: 100},
                 {r: 20, g: 120, b: 40},
                 {r: 120, g: 20, b: 60},
                 {r: 120, g: 20, b: 100},
@@ -44,7 +44,7 @@ export default class Index extends Component {
             blueblock: 0,
             greenblock: 0,
             redRequest: 1,
-            blueRequest: 1,
+            blueRequest: 4,
             greenRequest: 1,//
             level:1,
             interval: '', //暂停和开始自动移动
